@@ -1,0 +1,33 @@
+{
+  "name": "click-released-beta",
+  "version": "1.0.0",
+  "description": "### Overview:",
+  "main": "Gruntfile.js",
+  "directories": {
+    "test": "test"
+  },
+  "dependencies": {
+    "bluebird": "^3.3.5",
+    "body-parser": "^1.15.1",
+    "bookshelf": "^0.9.5",
+    "ejs": "^2.4.1",
+    "express": "^4.13.4",
+    "express-partials": "^0.3.0",
+    "knex": "^0.11.3"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/abe732/MKS-SF-mvp.git"
+  },
+  "author": "Adam Behrens",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/abe732/MKS-SF-mvp/issues"
+  },
+  "homepage": "https://github.com/abe732/MKS-SF-mvp#readme"
+}
