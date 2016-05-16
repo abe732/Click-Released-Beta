@@ -5,14 +5,15 @@
 </head>
 <body class="container">
   <header>
-    <% include ../views/header %>
+    <!-- <% include ../views/header %> -->
   </header>
   <main>
     <div class="search-box">
-      <h1>Paste URL Here</h1>
-      <input id="username" type="text" name="username">
+      <h1>Go ahead, free yourself from click bait</h1>
+      <input id="clicksearch" type="text" name="clicksearch" placeholder="Paste URL here">
+      <button>Verify</button>
     </div>
-    <div></div>
+    <div ng-app='clickReleased'></div>
   </main>
   <footer>
     <% include ../views/footer %>
