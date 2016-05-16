@@ -1,4 +1,4 @@
-# Project Name #
+# Click Released Beta#
 
 <!-- 
 > This material was originally posted [here](http://www.quora.com/What-is-Amazons-approach-to-product-development-and-product-management). It is reproduced here for posterities sake.
@@ -15,30 +15,24 @@ Oh, and I also like to write press-releases in what I call "Oprah-speak" for mai
 
 Once the project moves into development, the press release can be used as a touchstone; a guiding light. The product team can ask themselves, "Are we building what is in the press release?" If they find they're spending time building things that aren't in the press release (overbuilding), they need to ask themselves why. This keeps product development focused on achieving the customer benefits and not building extraneous stuff that takes longer to build, takes resources to maintain, and doesn't provide real customer benefit (at least not enough to warrant inclusion in the press release).
  -->
- 
-## Heading ##
-  > Name the product in a way the reader (i.e. your target customers) will understand.
-
-## Sub-Heading ##
-  > Describe who the market for the product is and what benefit they get. One sentence only underneath the title.
+## A tool for avoiding bad science on social media ##
 
 ## Summary ##
-  > Give a summary of the product and the benefit. Assume the reader will not read anything else so make this paragraph good.
+  > See an article that looks too good to be true? Did a friend share the latest diet or exercise trend and you want to see whether it really holds up? Click Released Beta frees you from the click-bait by leveraging the power of Watson to verify the science behind the fluff.
 
 ## Problem ##
-  > Describe the problem your product solves.
+  > Articles gain traction without being verified
+  > Facebook filters and sorts your newsfeed without considering underlying validity
+  > Ads and sponsored content can appear indistinguishable from legitimate, well-researched content
 
 ## Solution ##
-  > Describe how your product elegantly solves the problem.
-
-## Quote from You ##
-  > A quote from a spokesperson in your company.
+  > Click Released Beta offers a simple user interface for you to copy-paste any article or content shared on social media for verification. It keeps track of articles for additional published research to monitor changes over time.
 
 ## How to Get Started ##
-  > Describe how easy it is to get started.
+  > The Beta version of Click Released is a standalone site that can be accessed at http://heroku.com/click-released-beta. Future versions will be integrated into the browser as a plug-in.
 
 ## Customer Quote ##
-  > Provide a quote from a hypothetical customer that describes how they experienced the benefit.
+  > "I wish I had this before I did that week long juice cleanse Dr. Oz was promoting."
 
-## Closing and Call to Action ##
-  > Wrap it up and give pointers where the reader should go next.
+## Try it Out ##
+  > http://heroku.com/click-released-beta
