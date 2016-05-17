@@ -8,14 +8,19 @@
 <body>
   <h1>Click Released Beta</h1>
     <div class="search-box">
-<!--       <h2>Paste URL Here</h2>
-      <input id="username" type="text" name="username"> -->
+      <h2>Go ahead, free yourself from click bait</h2>
+      <input id="clicksearch" type="text" ng-model="clickReleased" placeholder="Paste URL here">
+      <button>Verify</button>
     </div>
+    
     <div ng-view></div>
 
-    <script src="lib/angular/angular.js"></script>
-    <script src="lib/angular-route/angular-route.js"></script>
+    <script src="bower_components/angular/angular.min.js"></script>
+    <script src="bower_components/angular-route/angular-route.min.js"></script>
 
+    <script src="app/services.js"></script>
+    <script src="app/search.js"></script>
     <script src="app/app.js"></script>
+
 </body>
 </html>

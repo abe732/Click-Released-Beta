@@ -1,7 +1,7 @@
 angular.module('clickReleased', [
   'clickReleased.Search'
   ])
-.config(function($routeProvider, $httpProvider) {
+.config(function($routeProvider) {
   $routeProvider
   .when('/', {
     templateUrl: 'client/index.html',
