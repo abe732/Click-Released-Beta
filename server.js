@@ -17,16 +17,31 @@ app.use(bodyParser.json());
 app.post('/', function(req, res) {
 	var url = req.body.url;
 	console.log('server post');
-	// res.send(url);
-	
-	alchemy.entities(url, {}, function(err, response) {
+
+	alchemy.sentiment(url, {}, function(err, response) {
 	  if (err) throw err;
-	  var entities = response.entities;
-	  console.log(response);
-	  //pull response.data[0].text;
-	  //pull response.data[1].text;
-	  res.send(entities); // boolean true / false
+	  var sentiment = response.docSentiment;
+	  console.log(sentiment);
+	  res.send(sentiment);
 	});
+
+	//**future functionality to add:
+	// res.send(url);
+	// alchemy.author(url, {}, function(err, response) {
+	//   if (err) throw err;
+	//   var author = response.author;
+	//   console.log(author);
+	//   res.send(author);
+	// });
+
+	// alchemy.entities(url, {}, function(err, response) {
+	//   if (err) throw err;
+	//   var entities = response.entities;
+	//   console.log(response);
+	//   //pull response.data[0].text;
+	//   //pull response.data[1].text;
+	//   res.send(entities); // boolean true / false
+	// });
 
 	// alchemy.entities(url, {}, function(err, response) {
 	//   if (err) throw err;

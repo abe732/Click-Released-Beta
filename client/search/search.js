@@ -20,10 +20,19 @@ angular.module('clickReleased.search', [])
     $scope.master = angular.copy(link);
     var data = {url: link};
     // console.log(link);
+    //promisify and then do a .then
+    // var a = new Promise ();
     $http.post("/", data).then(function successCb(response) {
-      //load new view
-      //return manuplated object
-      $scope.entity = response;
+      function biased() {
+        if (response.type === "neutral") {
+          $scope.entity = "Unbiased";
+        }
+        else {
+          $scope.entity = "Biased " + response.data.type;
+        }
+      };
+
+      biased();
       console.log(response);
     }, function errorCB(response) {
       console.log('didnt work', response);
