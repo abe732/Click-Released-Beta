@@ -2,13 +2,16 @@
 <html ng-app='clickReleased'>
 <head>
   <meta charset="utf-8" />
-  <title>Click Released Beta</title>
+  <title class="text-center">Click Released Beta</title>
   <link rel="stylesheet" type="text/css" href="styles/style.css" />
+  <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
 </head>
 <body>
-  <h1>Click Released Beta</h1>
+  <h1 class="text-center">Click Released Beta</h1>
     <div class="search-box">
-      <h2>Go ahead, free yourself from click bait</h2>
+      <h2 class="text-center">Go ahead, free yourself from click bait</h2>
+    </div>
+    <div <div class="text-center">
       <input id="clicksearch" type="text" ng-model="clickReleased" placeholder="Paste URL here">
       <button>Verify</button>
     </div>
@@ -21,6 +24,10 @@
     <script src="app/services.js"></script>
     <script src="app/search.js"></script>
     <script src="app/app.js"></script>
-
+  <footer>
+    <p class="text-center text-muted">© Copyright 2016 Adam Behrens</p>
+    <p class="text-center text-muted"> Text analysis by the Watson AlchemyAPI www.alchemyapi.com</p>
+  </footer>
 </body>
+
 </html>
