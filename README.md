@@ -11,7 +11,7 @@
   > Ads and sponsored content can appear indistinguishable from legitimate, well-researched content
 
 ## Solution ##
-  > Click Released Beta offers a simple user interface for you to copy-paste an article shared on social media to determine it's bias and present alternatives.
+  > Click Released Beta offers a simple user interface for you to copy-paste an article shared on social media to determine its bias and explore alternatives.
 
 ## Customer Quote ##
   > "I wish I had this before I decided to vote for Trump!"
