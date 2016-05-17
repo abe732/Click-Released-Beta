@@ -1,11 +1,37 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <% include ../views/head %>
+  <meta charset="UTF-8">
+  <title>Click Released Beta</title>
+
+<!-- CSS (load bootstrap from a CDN) -->
+  <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+  <style>
+    body    { 
+    padding-top:50px;
+    background-image: url("../assets/network.jpg");
+    }
+  </style>
 </head>
 <body class="container">
   <header>
-    <!-- <% include ../views/header %> -->
+    <nav class="navbar navbar-default" role="navigation">
+    <div class="container-fluid">
+
+        <div class="navbar-header">
+            <a class="navbar-brand" href="#">
+                <span></span>
+                Click Released Beta
+            </a>
+        </div>
+
+        <ul class="nav navbar-nav">
+            <li><a href="/">Home</a></li>
+            <li><a href="/about">About</a></li>
+        </ul>
+      
+    </div>
+    </nav>
   </header>
   <main>
     <div class="search-box">
@@ -16,7 +42,9 @@
     <div ng-app='clickReleased'></div>
   </main>
   <footer>
-    <% include ../views/footer %>
+    <p class="text-center text-muted">© Copyright 2016 Adam Behrens</p>
+
+    <p class="text-center text-muted"> Text analysis by the Watson AlchemyAPI www.alchemyapi.com</p>
   </footer>
 </body>
 </html>

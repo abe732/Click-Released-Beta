@@ -1,5 +1,9 @@
 var express = require('express');
 var partials = require('express-partials');
+var watson = require('watson-developer-cloud');
+var alchemyAPI = require('alchemy-api');
+var alchemy = new AlchemyAPI('YOUR_KEY_HERE');
+//https://www.npmjs.com/package/alchemy-api
 
 var app = express();
 

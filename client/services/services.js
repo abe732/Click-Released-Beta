@@ -2,10 +2,21 @@ angular.module('clickReleased.services', [])
 
 .factory('Links', function ($http) {
   // Your code here
+  var apiKey = "YOUR_KEY_HERE";
+  var baseUrl = "http://gateway-a.watsonplatform.net/calls";
+  var keywords = "/url/URLGetRankedKeywords";
+  var entityID = "/requireEntities=1";
+  var sentiment = "/url/URLGetTargetedSentiment";
+    //enriched.url.docSentiment.type=positive
+  var newsMine = "/data/GetNews?outputMode=json";
 
+  // http://www.ibm.com/smarterplanet/us/en/ibmwatson/developercloud/doc/getting_started/gs-quick-nodejs.shtml
+  // http://www.ibm.com/smarterplanet/us/en/ibmwatson/developercloud/doc/getting_started/gs-tokens.shtml
   var callExternal = function() {
     return $http({
-      url: 'https://gateway-a.watsonplatform.net/'
+      method: 'GET'
+      url: baseUrl + newsMine + "&apikey=" + apiKey;
+      data: data
       //title: need to get the keyword to find in title
       //body: keyword
     })
@@ -18,17 +29,15 @@ angular.module('clickReleased.services', [])
       //relations strength
       //publication stature
       //number of articles
+    //$scope.verifyScore = 0 or 1
   };
 
-  var addLink = function(data) {
-    return $http({
-      method: 'POST',
-      url: '/api/links',
-      data: data
-    })
-    .then(function(resp) {
-      return resp.data;
-    })
+  var suggestAlt = function () {
+
+  }
+
+  var addLinks = function(data) {
+    //need
   };
 
   // var getLinks = function() {
