@@ -4,16 +4,22 @@
   <meta charset="utf-8" />
   <title class="text-center">Click Released Beta</title>
   <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+  <style type="text/css">
+    body {
+    background-size: 100%;
+    background-image: url("../assets/balloon.jpg") !important; 
+    }
+</style>
 </head>
 <body>
-  <h1 class="text-center">Click Released Beta</h1>
+  <h1 class="text-center" style="padding-top:200px; padding-left:350px; color:white">Click Released Beta</h1>
     <div class="search-box">
-      <h2 class="text-center">Go ahead, free yourself from click bait</h2>
+      <h2 class="text-center" style="padding-left:375px; color: white">Go ahead, burst your bubble</h2>
     </div>
-    <div class="text-center" ng-controller="SearchController">
+    <div class="text-center" ng-controller="SearchController" style="padding-left:375px;">
       <input id="clicksearch" type="text" ng-model="link" placeholder="Paste URL here">
       <button ng-click="update(link)">Verify</button>
-      <h4>{{entity}}</h4>
+      <h3 style="color:red">{{entity}}</h3>
     </div>
 
     <div>
@@ -30,8 +36,8 @@
     <script src="/app.js"></script>
 
   <footer>
-    <p class="text-center text-muted">© Copyright 2016 Adam Behrens</p>
-    <p class="text-center text-muted"> Text analysis by the Watson AlchemyAPI www.alchemyapi.com</p>
+    <p class="text-center text-muted" style="padding-top:200px; padding-left:375px;">© Copyright 2016 Adam Behrens</p>
+    <p class="text-center text-muted" style="padding-left:375px;"> Text analysis by the Watson AlchemyAPI www.alchemyapi.com</p>
   </footer>
 </body>
 
