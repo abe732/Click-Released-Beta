@@ -1,16 +1,18 @@
 angular.module('clickReleased', [
-  'clickReleased.Search'
+  'clickReleased.search',
+  'ngRoute'
   ])
 .config(function($routeProvider) {
   $routeProvider
   .when('/', {
-    templateUrl: 'client/index.html',
-    controller: 'mainController'
+    templateUrl: 'index.html',
+    controller: 'MainController'
   })
   .when('/search', {
-    templateUrl: 'search/search.html'
+    templateUrl: 'search/search.html',
+    controller: 'SearchController'
   })
-  .otherwise({
-    redirectTo: '/'
-  })
+  // .otherwise({
+  //   redirectTo: '/'
+  // })
 })

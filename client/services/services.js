@@ -14,14 +14,15 @@ angular.module('clickReleased.services', [])
   // http://www.ibm.com/smarterplanet/us/en/ibmwatson/developercloud/doc/getting_started/gs-tokens.shtml
   var callExternal = function() {
     return $http({
-      method: 'GET'
-      url: baseUrl + newsMine + "&apikey=" + apiKey;
+      method: 'GET',
+      url: baseUrl + newsMine + "&apikey=" + apiKey,
       data: data
       //title: need to get the keyword to find in title
       //body: keyword
-    })
-    .then
+    });
   };
+  //   .then
+  // };
 
   var processData = function () {
     //need to write logic for the JSON object to roll up into a score
@@ -34,7 +35,7 @@ angular.module('clickReleased.services', [])
 
   var suggestAlt = function () {
 
-  }
+  };
 
   var addLinks = function(data) {
     //need

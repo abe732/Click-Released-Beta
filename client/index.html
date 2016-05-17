@@ -3,7 +3,6 @@
 <head>
   <meta charset="utf-8" />
   <title class="text-center">Click Released Beta</title>
-  <link rel="stylesheet" type="text/css" href="styles/style.css" />
   <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
 </head>
 <body>
@@ -11,23 +10,30 @@
     <div class="search-box">
       <h2 class="text-center">Go ahead, free yourself from click bait</h2>
     </div>
-    <div <div class="text-center">
-      <input id="clicksearch" type="text" ng-model="clickReleased" placeholder="Paste URL here">
-      <button>Verify</button>
+    <div class="text-center" ng-controller="SearchController">
+      <input id="clicksearch" type="text" ng-model="link" placeholder="Paste URL here">
+      <button ng-click="update(link)">Verify</button>
+      <h4>e.g., {{ link.url }}</h4>
     </div>
-    
-    <div ng-view></div>
 
-    <script src="bower_components/angular/angular.min.js"></script>
-    <script src="bower_components/angular-route/angular-route.min.js"></script>
+    <div>
+      {{entity}}
+    </div>
 
-    <script src="app/services.js"></script>
-    <script src="app/search.js"></script>
-    <script src="app/app.js"></script>
+    <!-- <div ng-view></div> -->
+
+    <script src="/scripts/angular/angular.js"></script>
+    <script src="scripts/angular-route/angular-route.js"></script>
+
+    <script src="services/services.js"></script>
+    <script src="search/search.js"></script>
+    <script src="/app.js"></script>
+
   <footer>
     <p class="text-center text-muted">© Copyright 2016 Adam Behrens</p>
     <p class="text-center text-muted"> Text analysis by the Watson AlchemyAPI www.alchemyapi.com</p>
   </footer>
 </body>
+
 
 </html>
