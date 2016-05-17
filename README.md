@@ -1,6 +1,6 @@
 # Click Released Beta#
 
-## A tool for avoiding the filter bubble on social media ##
+## A tool for bursting the filter bubble on social media ##
 
 ## Summary ##
   > See an article that looks too good to be true? Not sure what type of bias you're encountering when reading things your friends share on social media? Click Released Beta pops the filter bubble by leveraging the power of Watson to expose bias and show you alternative narratives for the things you read.
