@@ -7,7 +7,7 @@ var alchemy = new AlchemyAPI('bfa7f6b236ba90e1b2cadd86f5b6f8203f6123c9');
 
 var app = express();
 
-var port = 3458;
+var port = process.env.PORT || 3458;
 
 app.use(express.static(__dirname + '/client'));
 app.use('/scripts', express.static(__dirname + '/bower_components'));
