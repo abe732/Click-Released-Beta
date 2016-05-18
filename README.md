@@ -17,4 +17,4 @@
   > "I wish I had this before I decided to vote for Trump!"
 
 ## Try it Out ##
-  > Coming soon!
+  > https://warm-bayou-59705.herokuapp.com/
