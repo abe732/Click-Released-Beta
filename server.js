@@ -11,6 +11,7 @@ var port = process.env.PORT || 3458;
 
 app.use(express.static(__dirname + '/client'));
 app.use('/scripts', express.static(__dirname + '/bower_components'));
+
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
 
