@@ -18,7 +18,9 @@
     </div>
     <div class="text-center" ng-controller="SearchController" style="padding-left:375px;">
       <input id="clicksearch" type="text" ng-model="link" placeholder="Paste URL here">
-      <button ng-click="update(link)">Verify</button>
+      <a href='#/alternatives'>
+        <button ng-click="update(link)">Verify</button>
+      </a>
       <h3 style="color:red">{{entity}}</h3>
     </div>
 
@@ -26,13 +28,14 @@
       
     </div>
 
-    <!-- <div ng-view></div> -->
+    <div ng-view></div>
 
     <script src="/scripts/angular/angular.js"></script>
     <script src="scripts/angular-route/angular-route.js"></script>
 
     <script src="services/services.js"></script>
     <script src="search/search.js"></script>
+    <script src="alternatives/alternatives.js"></script>
     <script src="/app.js"></script>
 
   <footer>

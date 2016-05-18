@@ -2,7 +2,9 @@ angular.module('clickReleased.search', [])
 
 .controller('SearchController', function($scope, $http) {
   $scope.master= {};
+  $scope.bias;
   $scope.entity;
+  $scope.alternatives = false;
   $scope.update = function (link) {
 
   $scope.master = angular.copy(link);
@@ -12,6 +14,7 @@ angular.module('clickReleased.search', [])
   // var a = new Promise ();
   $http.post("/", data).then(function successCb(response) {
     function biased() {
+      $scope.bias = response;
       if (response.type === "neutral") {
         $scope.entity = "Unbiased";
       }
@@ -24,11 +27,6 @@ angular.module('clickReleased.search', [])
     }, function errorCB(response) {
       console.log('didnt work', response);
     }); 
-  };
-
-  $scope.url= {
-    url: "http://buzzfeed.com"
-    //callExternal using the url
   };
 
   // $scope.$watch('clicksearch', function() {

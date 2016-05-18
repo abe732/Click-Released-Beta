@@ -25,6 +25,10 @@ app.post('/', function(req, res) {
 	  res.send(sentiment);
 	});
 
+	// Promise.all([p1]).then(function(sentiment) {
+	// 	res.send(sentiment);
+	// })
+
 	//**future functionality to add:
 	// res.send(url);
 	// alchemy.author(url, {}, function(err, response) {
